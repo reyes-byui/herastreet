@@ -3,10 +3,10 @@ export default function WhatIDoPage() {
   return (
     <main className="min-h-screen w-full flex flex-col items-center justify-center bg-white dark:bg-black text-gray-900 dark:text-gray-100 p-0 m-0">
       {/* Section 1: Content, Design, Logo, Services, Strategy */}
-      <section className="w-full flex flex-row items-center justify-center gap-12 py-16">
+      <section className="w-full flex flex-row items-center justify-center gap-18 py-16">
         <span className="text-1xl sm:text-1xl">Content</span>
         <span className="text-1xl sm:text-1xl">Design</span>
-        <span className="block w-16 h-16 sm:w-24 sm:h-24 relative">
+        <span className="block w-16 h-16 sm:w-16 sm:h-16 relative">
           <Image
             src="/images/HA.jpg"
             alt="Hera Logo"

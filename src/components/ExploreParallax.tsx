@@ -39,7 +39,7 @@ export default function ExploreParallax() {
             Create with Me.
           </h1>
           <p className="text-lg sm:text-xl text-gray-200 mb-8 max-w-2xl drop-shadow">
-            I don't work, I enjoy. That's the angle where I stand to see something beautiful.
+            I don&apos;t work, I enjoy. That&apos;s the angle where I stand to see something beautiful.
           </p>
           <Link
             href="/what-i-do"

@@ -18,7 +18,7 @@ export default function CreateWithMe() {
       <div className="absolute inset-0 flex items-center justify-center text-center z-10 bg-black/40 w-full h-full p-0 m-0">
         <div className="flex flex-col items-center justify-center w-full">
           <blockquote className="text-3xl sm:text-4xl font-semibold text-white drop-shadow-lg mb-8 max-w-2xl m-0">
-            I don't work, I enjoy. That's the angle where I stand to see something beautiful.
+            I don&apos;t work, I enjoy. That&apos;s the angle where I stand to see something beautiful.
           </blockquote>
           <Link
             href="/what-i-do"

@@ -30,8 +30,8 @@ export default function WhatIDoPage() {
             height={32}
           />
         </span>
-        <span className="text-lg sm:text-3xl font-large text-center max-w-xl">
-          &quot;I am Hera – A Multimedia Developer passionate about blending content, design, and technology to create meaningful digital experiences.&quot;
+          <span className="text-lg sm:text-3xl font-large text-center max-w-xl">
+            &quot;I am Hera &ndash; A Multimedia Developer passionate about blending content, design, and technology to create meaningful digital experiences.&quot;
         </span>
         <span className="block w-10 h-10 sm:w-12 sm:h-12 relative">
           <Image

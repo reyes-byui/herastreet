@@ -35,7 +35,7 @@ export default function HeroParallax() {
       </div>
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-10 bg-black/40 px-10">
         <h1 className="text-4xl sm:text-5xl font-extrabold mb-4 tracking-tight text-white drop-shadow-lg">
-          Hi, I'm Hera.
+          Hi, I&apos;m Hera.
         </h1>
         <p className="text-lg sm:text-xl text-gray-200 mb-8 max-w-2xl drop-shadow">
           Showcasing my work, skills, and passion for creativity and technology. Explore my latest projects, blog posts, and more.

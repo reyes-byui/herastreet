@@ -1,7 +1,6 @@
 "use client";
 
 import { FaInstagram, FaFacebookF, FaYoutube, FaPinterestP } from "react-icons/fa";
-import Image from "next/image";
 const currentYear = new Date().getFullYear();
 
 

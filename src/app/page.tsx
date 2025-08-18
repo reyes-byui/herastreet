@@ -3,7 +3,7 @@
 import Image from "next/image";
 import HeroParallax from "../components/HeroParallax";
 import CreateWithMe from "../components/CreateWithMe";
-import Link from "next/link";
+
 import ImageCarousel from "../components/ImageCarousel";
 
 
@@ -54,7 +54,7 @@ export default function Home() {
         {/* Quote column (3/10) */}
         <div className="w-full md:w-3/10 flex flex-col justify-center items-center bg-white/80 dark:bg-black/60 rounded-none p-4 shadow-none min-h-[240px]">
           <blockquote className="text-xl italic text-gray-800 dark:text-gray-100 text-center">
-            "Creativity is intelligence having fun."
+              &quot;Creativity is intelligence having fun.&quot;
           </blockquote>
           <span className="mt-4 text-sm text-gray-500">– Albert Einstein</span>
         </div>

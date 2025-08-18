@@ -1,6 +1,7 @@
 
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
 import { FaInstagram, FaFacebookF, FaYoutube, FaPinterestP } from "react-icons/fa";
@@ -23,7 +24,7 @@ export default function Header() {
           className="flex items-center"
         >
           <span className="block w-12 h-12 sm:w-16 sm:h-16 relative">
-            <img
+            <Image
               src="/images/HA.jpg"
               alt="Hera Logo"
               className="rounded-full object-cover w-full h-full"

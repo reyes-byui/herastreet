@@ -7,7 +7,7 @@ export default function WhatIDoPage() {
         <span className="text-1xl sm:text-1xl">Content</span>
         <span className="text-1xl sm:text-1xl">Design</span>
         <span className="block w-16 h-16 sm:w-24 sm:h-24 relative">
-          <img
+          <Image
             src="/images/HA.jpg"
             alt="Hera Logo"
             className="object-cover w-full h-full"
@@ -22,7 +22,7 @@ export default function WhatIDoPage() {
       {/* Section 2: Mail icon, quote, Instagram icon */}
       <section className="w-full flex flex-row items-center justify-center gap-20 py-12">
         <span className="block w-10 h-10 sm:w-12 sm:h-12 relative">
-          <img
+          <Image
             src="/icons/mail.svg"
             alt="Mail Icon"
             className="object-contain w-full h-full"
@@ -31,10 +31,10 @@ export default function WhatIDoPage() {
           />
         </span>
         <span className="text-lg sm:text-3xl font-large text-center max-w-xl">
-          "I am Hera – A Multimedia Developer passionate about blending content, design, and technology to create meaningful digital experiences."
+          &quot;I am Hera – A Multimedia Developer passionate about blending content, design, and technology to create meaningful digital experiences.&quot;
         </span>
         <span className="block w-10 h-10 sm:w-12 sm:h-12 relative">
-          <img
+          <Image
             src="/icons/ig.svg"
             alt="Instagram Icon"
             className="object-contain w-full h-full"
@@ -46,3 +46,4 @@ export default function WhatIDoPage() {
     </main>
   );
 }
+import Image from "next/image";

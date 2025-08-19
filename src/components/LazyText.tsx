@@ -39,7 +39,7 @@ function LazyText<T extends ElementType = 'div'>(props: LazyTextProps<T>) {
   const Tag = (as || 'div') as ElementType;
 
   // Determine direction: if as is 'p' and no direction is set, use 'right', else default to 'left'
-  let slideDirection: SlideDirection = direction || (as === 'p' ? 'right' : 'left');
+  const slideDirection: SlideDirection = direction || (as === 'p' ? 'right' : 'left');
   let initialTransform = '';
   if (slideDirection === 'left') initialTransform = '-translate-x-8';
   else if (slideDirection === 'right') initialTransform = 'translate-x-8';
@@ -53,7 +53,7 @@ function LazyText<T extends ElementType = 'div'>(props: LazyTextProps<T>) {
         isVisible ? 'opacity-100 translate-x-0 translate-y-0' : `opacity-0 ${initialTransform}`
       } ${className}`}
       style={{ willChange: "opacity, transform", ...style }}
-      {...(rest as any)}
+  {...(rest as Omit<ComponentPropsWithoutRef<T>, 'as' | 'className' | 'style' | 'children' | 'direction'>)}
     >
       {children}
     </Tag>

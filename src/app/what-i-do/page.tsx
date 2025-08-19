@@ -2,6 +2,7 @@
 
 "use client";
 import React from "react";
+import Image from "next/image";
 import LazyImage from "../../components/LazyImage";
 import LazyText from "../../components/LazyText";
 import "../../styles/contentScroll.css";
@@ -328,11 +329,14 @@ export default function WhatIDoPage() {
 
       {/* Hero Section at the bottom */}
         <section className="relative w-full h-[100vh] flex items-center justify-center">
-          <img
+          <Image
             src="/images/workout.jpg"
             alt="Hero Workout"
+            fill
             className="absolute inset-0 w-full h-full object-cover z-0"
             style={{ objectPosition: 'center 20%' }}
+            priority
+            sizes="100vw"
           />
           <div className="relative z-10 flex flex-col items-center justify-center w-full h-full bg-black/40 pt-16">
             <LazyText as="h1" className="text-3xl sm:text-5xl text-white text-center drop-shadow-lg mb-4">

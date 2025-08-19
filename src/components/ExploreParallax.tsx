@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import LazyText from "./LazyText";
 import { useEffect, useState } from "react";
 
 export default function ExploreParallax() {
@@ -35,9 +36,9 @@ export default function ExploreParallax() {
       </div>
       <div className="absolute inset-0 flex items-center justify-center text-center z-10 bg-black/40 w-full h-full p-0 m-0">
         <div className="flex flex-col items-center justify-center w-full">
-          <h1 className="text-4xl sm:text-5xl font-extrabold mb-4 tracking-tight text-white drop-shadow-lg">
+          <LazyText as="h1" className="text-4xl sm:text-5xl font-extrabold mb-4 tracking-tight text-white drop-shadow-lg">
             Create with Me.
-          </h1>
+          </LazyText>
           <p className="text-lg sm:text-xl text-gray-200 mb-8 max-w-2xl drop-shadow">
             I don&apos;t work, I enjoy. That&apos;s the angle where I stand to see something beautiful.
           </p>

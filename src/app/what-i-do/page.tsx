@@ -1,5 +1,3 @@
-
-
 "use client";
 import React from "react";
 import Image from "next/image";
@@ -43,9 +41,9 @@ function ContentPlate({ video, title, desc, link }: ContentPlateProps) {
 
 export default function WhatIDoPage() {
   return (
-    <main className="min-h-screen w-full flex flex-col items-center justify-center bg-black p-0 m-0 text-white">
+    <main className="min-h-screen w-full flex flex-col items-center justify-center bg-black p-0 m-0 text-white w-full max-w-full">
       {/* Section 1: Development, Content, Design, Strategy */}
-      <section className="w-full flex flex-row items-center justify-center gap-18 py-16 pt-30">
+  <section className="w-full flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-18 pt-24 sm:pt-30 py-8 sm:py-8">
         <a
           href="#development-section"
           className="text-1xl sm:text-1xl cursor-pointer hover:underline"
@@ -169,8 +167,8 @@ export default function WhatIDoPage() {
           Strategy
         </a>
       </section>
-      {/* Section 2: Mail icon, quote, Instagram icon */}
-      <section className="w-full flex flex-row items-center justify-center gap-20 py-12">
+  {/* Section 2: Mail icon, quote, Instagram icon */}
+  <section className="w-full flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-20 py-8 sm:py-12">
         <span className="block w-10 h-10 sm:w-12 sm:h-12 relative">
           <LazyImage
             src="/icons/mail.svg"
@@ -180,8 +178,8 @@ export default function WhatIDoPage() {
             height={32}
           />
         </span>
-        <LazyText as="span" className="text-lg sm:text-3xl font-large text-center max-w-xl">
-          &quot;I am Hera &ndash; A Multimedia Developer passionate about blending content, design, and technology to create meaningful digital experiences.&quot;
+        <LazyText as="span" className="text-lg sm:text-3xl font-large text-center max-w-xl px-4 sm:px-0">
+                &quot;I am Hera &ndash; A Multimedia Developer passionate about blending content, design, and technology to create meaningful digital experiences.&quot;
         </LazyText>
         <span className="block w-10 h-10 sm:w-12 sm:h-12 relative">
           <LazyImage
@@ -195,8 +193,9 @@ export default function WhatIDoPage() {
       </section>
       {/* Development Section (scroll target) */}
       <section id="development-section" className="w-full flex flex-col items-center justify-center py-24">
-  <LazyText as="h2" className="text-2xl sm:text-5xl font-bold mb-8 text-center">HTML, CSS, JavaScript, Next.js, React and more</LazyText>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 w-full max-w-5xl">
+      <LazyText as="h2" className="text-2xl sm:text-5xl font-bold mb-8 text-center px-4 sm:px-2">HTML, CSS, JavaScript, Next.js, React and more
+      </LazyText>
+      <div className="px-8 sm:grid grid-cols-1 sm:grid-cols-2 gap-10 w-full max-w-5xl">
         {/* Handcrafted Haven */}
         <div className="flex flex-col items-center p-8 bg-white">
           <LazyImage src="/images/handcrafted.JPG" alt="Handcrafted Haven" width={600} height={340} className="mb-6 object-cover w-full h-72" />
@@ -209,81 +208,78 @@ export default function WhatIDoPage() {
           </LazyText>
           <a href="https://hancraftedhaven.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-black hover:underline">Know More</a>
         </div>
-        {/* GRANDYA */}
-        <div className="flex flex-col items-center p-8 bg-white">
-          <LazyImage src="/images/grandya.JPG" alt="GRANDYA" width={600} height={340} className="mb-6 object-cover w-full h-72" />
-          <LazyText
-            as="h3"
-            className="text-xl font-semibold sm:text-3xl mb-2 bg-black text-white px-4 py-2"
-            style={{ backgroundColor: '#272727ff', color: '#fff', display: 'inline-block' }}
-          >
-            GRANDYA
-          </LazyText>
-          <a href="https://www.grandyacoffee.com" target="_blank" rel="noopener noreferrer" className="text-black hover:underline">Know More</a>
-        </div>
-        {/* White line after first row */}
-        <div className="col-span-2 w-full h-px bg-white my-2"></div>
-        {/* FOYO */}
-        <div className="flex flex-col items-center p-8 bg-white">
-          <LazyImage src="/images/foyo.JPG" alt="FOYO" width={600} height={340} className="mb-6 object-cover w-full h-72" />
-          <LazyText
-            as="h3"
-            className="text-xl font-semibold sm:text-3xl mb-2 bg-black text-white px-4 py-2"
-            style={{ backgroundColor: '#272727ff', color: '#fff', display: 'inline-block' }}
-          >
-            FOYO
-          </LazyText>
-          <a href="https://www.foyo.world" target="_blank" rel="noopener noreferrer" className="text-black hover:underline">Know More</a>
-        </div>
-        {/* Samurai */}
-        <div className="flex flex-col items-center p-8 bg-white">
-          <LazyImage src="/images/samurai-kh.jpg" alt="Samurai" width={600} height={340} className="mb-6 object-cover w-full h-72" />
-          <LazyText
-            as="h3"
-            className="text-xl font-semibold sm:text-3xl mb-2 bg-black text-white px-4 py-2"
-            style={{ backgroundColor: '#272727ff', color: '#fff', display: 'inline-block' }}
-          >
-            Samurai
-          </LazyText>
-          <a href="https://www.samurai.com" target="_blank" rel="noopener noreferrer" className="text-black hover:underline">Know More</a>
-        </div>
-        {/* White line after second row */}
-        <div className="col-span-2 w-full h-px bg-white my-2"></div>
-        {/* Yume Kirako */}
-        <div className="flex flex-col items-center p-8 bg-white">
-          <LazyImage src="/images/yumekirako.jpg" alt="Yume Kirako" width={600} height={340} className="mb-6 object-cover w-full h-72" />
-          <LazyText
-            as="h3"
-            className="text-xl font-semibold sm:text-3xl mb-2 bg-black text-white px-4 py-2"
-            style={{ backgroundColor: '#272727ff', color: '#fff', display: 'inline-block' }}
-          >
-            Yume Kirako
-          </LazyText>
-          <a href="https://www.yumekirako.com" target="_blank" rel="noopener noreferrer" className="text-black hover:underline">Know More</a>
-        </div>
-        {/* La Brise */}
-        <div className="flex flex-col items-center p-8 bg-white">
-          <LazyImage src="/images/labrise.jpg" alt="La Brise" width={600} height={340} className="mb-6 object-cover w-full h-72" />
-          <LazyText
-            as="h3"
-            className="text-xl font-semibold sm:text-3xl mb-2 bg-black text-white px-4 py-2"
-            style={{ backgroundColor: '#272727ff', color: '#fff', display: 'inline-block' }}
-          >
-            La Brise
-          </LazyText>
-          <a href="https://www.labrise.com" target="_blank" rel="noopener noreferrer" className="text-black hover:underline">Know More</a>
-        </div>
-        </div>
-      </section>
-
-      {/* Content Section (scroll target, now at very bottom) */}
-      <section id="content-section" className="w-full flex flex-col items-center justify-center px-8 py-24 bg-[#2e2e2e] mt-16">
-        <LazyText as="h2" className="text-2xl sm:text-4xl text-white font-bold mb-8 text-center">
-          Social Media Content, Photography, Blog, Infographic and more
-        </LazyText>
-        {/* Manual horizontal scrollable slider (drag/scroll, scrollbar hidden) */}
-        <div className="w-full overflow-x-auto relative text-black scrollbar-hide" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
-          <style>{`
+          {/* GRANDYA */}
+          <div className="flex flex-col items-center p-8 bg-white">
+            <LazyImage src="/images/grandya.JPG" alt="GRANDYA" width={600} height={340} className="mb-6 object-cover w-full h-72" />
+            <LazyText
+              as="h3"
+              className="text-xl font-semibold sm:text-3xl mb-2 bg-black text-white px-4 py-2"
+              style={{ backgroundColor: '#272727ff', color: '#fff', display: 'inline-block' }}
+            >
+              GRANDYA
+            </LazyText>
+            <a href="https://www.grandyacoffee.com" target="_blank" rel="noopener noreferrer" className="text-black hover:underline">Know More</a>
+          </div>
+          {/* White line after first row */}
+          <div className="col-span-2 w-full h-px bg-white hidden sm:block my-2"></div>
+          {/* FOYO */}
+          <div className="flex flex-col items-center p-8 bg-white">
+            <LazyImage src="/images/foyo.JPG" alt="FOYO" width={600} height={340} className="mb-6 object-cover w-full h-72" />
+            <LazyText
+              as="h3"
+              className="text-xl font-semibold sm:text-3xl mb-2 bg-black text-white px-4 py-2"
+              style={{ backgroundColor: '#272727ff', color: '#fff', display: 'inline-block' }}
+            >
+              FOYO
+            </LazyText>
+            <a href="https://www.foyo.world" target="_blank" rel="noopener noreferrer" className="text-black hover:underline">Know More</a>
+          </div>
+          {/* Samurai */}
+          <div className="flex flex-col items-center p-8 bg-white">
+            <LazyImage src="/images/samurai-kh.jpg" alt="Samurai" width={600} height={340} className="mb-6 object-cover w-full h-72" />
+            <LazyText
+              as="h3"
+              className="text-xl font-semibold sm:text-3xl mb-2 bg-black text-white px-4 py-2"
+              style={{ backgroundColor: '#272727ff', color: '#fff', display: 'inline-block' }}
+            >
+              Samurai
+            </LazyText>
+            <a href="https://www.samurai.com" target="_blank" rel="noopener noreferrer" className="text-black hover:underline">Know More</a>
+          </div>
+          {/* White line after second row */}
+          <div className="col-span-2 w-full h-px bg-white hidden sm:block my-2"></div>
+          {/* Yume Kirako */}
+          <div className="flex flex-col items-center p-8 bg-white">
+            <LazyImage src="/images/yumekirako.jpg" alt="Yume Kirako" width={600} height={340} className="mb-6 object-cover w-full h-72" />
+            <LazyText
+              as="h3"
+              className="text-xl font-semibold sm:text-3xl mb-2 bg-black text-white px-4 py-2"
+              style={{ backgroundColor: '#272727ff', color: '#fff', display: 'inline-block' }}
+            >
+              Yume Kirako
+            </LazyText>
+            <a href="https://www.yumekirako.com" target="_blank" rel="noopener noreferrer" className="text-black hover:underline">Know More</a>
+          </div>
+          {/* La Brise - now inside the grid and styled the same as others */}
+          <div className="flex flex-col items-center p-8 bg-white">
+            <LazyImage src="/images/labrise.jpg" alt="La Brise" width={600} height={340} className="mb-6 object-cover w-full h-72" />
+            <LazyText
+              as="h3"
+              className="text-xl font-semibold sm:text-3xl mb-2 bg-black text-white px-4 py-2"
+              style={{ backgroundColor: '#272727ff', color: '#fff', display: 'inline-block' }}
+            >
+              La Brise
+            </LazyText>
+            <a href="https://www.labrise.com" target="_blank" rel="noopener noreferrer" className="text-black hover:underline">Know More</a>
+          </div>
+      </div> {/* Close grid container for Development section */}
+      {/* Social Media Content, Photography, Blog, Infographic and more */}
+      <LazyText as="h3" className="text-xl sm:text-3xl font-semibold mb-2 bg-black text-white px-4 py-2 mt-8 text-center">
+        Social Media Content, Photography, Blog, Infographic and more
+      </LazyText>
+      {/* Manual horizontal scrollable slider (drag/scroll, scrollbar hidden) */}
+      <div id="content-section" className="w-full overflow-x-auto relative text-black scrollbar-hide" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+                <style>{`
             .scrollbar-hide::-webkit-scrollbar { display: none; }
           `}</style>
           <div className="flex gap-8 px-2 py-2 min-w-fit">

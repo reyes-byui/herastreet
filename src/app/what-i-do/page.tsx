@@ -20,6 +20,10 @@ function ContentPlate({ video, title, desc, link }: ContentPlateProps) {
         autoPlay
         loop
         muted
+        playsInline
+        controls
+        controlsList="nofullscreen nodownload noremoteplayback"
+        disablePictureInPicture
         className="w-full h-40 object-cover mb-3 shadow bg-black"
         poster="/images/video-poster.jpg"
       >
@@ -104,7 +108,7 @@ export default function WhatIDoPage() {
         alt="Hera Logo"
         width={56}
         height={56}
-        className="object-cover ml-4 rounded-full border-1 border-white"
+        className="object-cover ml-4 border-1 border-white"
         priority
       />
       <a
@@ -343,6 +347,44 @@ export default function WhatIDoPage() {
             </a>
           </div>
         </section>
+        {/* Design Section */}
+        <section id="design-section" className="w-full flex flex-col items-center justify-center py-24 pr-4">
+          <LazyText as="h2" className="text-2xl sm:text-5xl font-bold mb-8 text-center py-4">
+            Front-End, UI/UX, Motion Graphics, Brand Identity, Social Media Design and more
+          </LazyText>
+          {/* Responsive Image Grid: 2 columns, classic .row/.column style */}
+          <div className="row flex flex-wrap w-full max-w-6xl px-1">
+            <div className="column flex flex-col w-1/2 max-w-1/2 px-1">
+              <LazyImage src="/images/herancat.jpg" alt="Design 1" width={1200} height={800} className="w-full h-auto mt-2" onContextMenu={e => e.preventDefault()} />
+              <LazyImage src="/images/foyo.JPG" alt="Design 2" width={800} height={1200} className="w-full h-auto mt-2" onContextMenu={e => e.preventDefault()} />
+              <LazyImage src="/images/businesscard.JPG" alt="Design 3" width={1200} height={800} className="w-full h-auto mt-2" onContextMenu={e => e.preventDefault()} />
+              <LazyImage src="/images/grandya.JPG" alt="Design 4" width={800} height={1200} className="w-full h-auto mt-2" onContextMenu={e => e.preventDefault()} />
+              <LazyImage src="/images/samurai-kh.jpg" alt="Design 5" width={1200} height={800} className="w-full h-auto mt-2" onContextMenu={e => e.preventDefault()} />
+              <LazyImage src="/images/ireland.jpg" alt="Design 6" width={800} height={1200} className="w-full h-auto mt-2" onContextMenu={e => e.preventDefault()} />
+            </div>
+            <div className="column flex flex-col w-1/2 max-w-1/2 px-1">
+              <LazyImage src="/images/prints.png" alt="Design 7" width={800} height={1200} className="w-full h-auto mt-2" onContextMenu={e => e.preventDefault()} />
+              <LazyImage src="/images/matsuri.jpg" alt="Design 8" width={1200} height={800} className="w-full h-auto mt-2" onContextMenu={e => e.preventDefault()} />
+              <LazyImage src="/images/lvdining7.jpg" alt="Design 9" width={800} height={1200} className="w-full h-auto mt-2" onContextMenu={e => e.preventDefault()} />
+              <LazyImage src="/images/karatsu.jpg" alt="Design 10" width={1200} height={800} className="w-full h-auto mt-2" onContextMenu={e => e.preventDefault()} />
+              <LazyImage src="/images/poster.jpg" alt="Design 11" width={800} height={1200} className="w-full h-auto mt-2" onContextMenu={e => e.preventDefault()} />
+              <LazyImage src="/images/bicycle.jpg" alt="Design 12" width={1200} height={800} className="w-full h-auto mt-2" onContextMenu={e => e.preventDefault()} />
+            </div>
+            <style>{`
+              @media (max-width: 800px) {
+                .column { flex: 50%; max-width: 50%; }
+              }
+              @media (max-width: 600px) {
+                .column { flex: 100%; max-width: 100%; }
+              }
+              .column img, .column .w-full { margin-top: 8px; vertical-align: middle; width: 100%; }
+              .row { padding: 0 4px; }
+              .column { padding: 0 4px; }
+            `}</style>
+          </div>
+          
+        </section>
+
     </main>
   );
 }

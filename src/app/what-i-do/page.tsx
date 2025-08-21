@@ -438,7 +438,7 @@ export default function WhatIDoPage() {
         {/* clients & collaborators */}
         <section className="w-full flex flex-col justify-center py-8 sm:py-12 px-8">
         <LazyText as="h2" className="text-2xl sm:text-3xl mb-8 text-left px-2 py-4">
-            • WHO I'VE WORKED WITH
+            • WHO I&apos;VE WORKED WITH
         </LazyText>
         <div className="col-span-2 w-full h-px bg-white block m-2 mb-12"></div>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 w-full max-w-3xl mx-auto items-center justify-items-center">

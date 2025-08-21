@@ -35,15 +35,15 @@ export default function HeroParallax() {
         />
       </div>
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-10 bg-black/40 px-10">
-        <LazyText as="h1" className="text-4xl sm:text-5xl font-extrabold mb-4 pl-4 pr-8 tracking-tight text-white drop-shadow-lg">
+        <LazyText as="h1" className="text-4xl sm:text-5xl font-extrabold mb-4 px-4 tracking-tight text-white drop-shadow-lg">
           Hi, I&apos;m Hera.
         </LazyText>
-        <LazyText as="p" className="text-lg sm:text-xl text-gray-200 mb-8 max-w-2xl drop-shadow pl-4 pr-8">
-          Showcasing my work, skills, and passion for creativity and technology. Explore my latest projects, blog posts, and more.
+        <LazyText as="p" className="text-lg sm:text-xl text-gray-200 mb-8 max-w-2xl drop-shadow px-4">
+          Showcasing my work, skills, and passion for creativity and technology. Explore my projects, creative process, and more.
         </LazyText>
         <Link
           href="/what-i-do"
-          className="inline-block ml-4 mr-8 p-8 py-3 rounded-full bg-gradient-to-r from-[#888888] via-[#C0C0C0] to-[#f8f8f8] text-white font-semibold text-lg shadow transition-colors duration-300
+          className="inline-block m-8 p-8 py-3 rounded-full bg-gradient-to-r from-[#888888] via-[#C0C0C0] to-[#f8f8f8] text-white font-semibold text-lg shadow transition-colors duration-300
             hover:bg-gradient-to-r hover:from-[#f8f8f8] hover:via-[#C0C0C0] hover:to-[#888888] hover:text-[#7A7A7A]"
         >
           Explore More

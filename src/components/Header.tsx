@@ -9,8 +9,7 @@ import { FaInstagram, FaFacebookF, FaYoutube, FaPinterestP } from "react-icons/f
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/what-i-do", label: "What I Do" },
-  { href: "/latest", label: "Latest" },
-  { href: "/blog", label: "Blog" },
+  { href: "/updates", label: "Updates" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -35,7 +34,7 @@ export default function Header() {
         </Link>
         {/* Desktop nav */}
         <div className="hidden sm:flex items-center gap-6">
-          <ul className="flex gap-6 text-base font-medium">
+          <ul className="flex gap-12 text-base font-medium">
             {navLinks.map((link) => (
               <li key={link.href}>
                 <Link
@@ -86,12 +85,26 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
-                className="text-white text-2xl font-semibold transition-colors hover:bg-gradient-to-r hover:from-[#f8f8f8] hover:via-[#C0C0C0] hover:to-[#888888] hover:bg-clip-text hover:text-transparent"
+              className="text-white text-2xl font-semibold transition-colors hover:bg-gradient-to-r hover:from-[#f8f8f8] hover:via-[#C0C0C0] hover:to-[#888888] hover:bg-clip-text hover:text-transparent"
               onClick={() => setMenuOpen(false)}
             >
               {link.label}
             </Link>
           ))}
+          <div className="flex items-center gap-6 mt-4">
+            <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <FaInstagram className="text-2xl text-white hover:text-[#C0C0C0] transition-colors" />
+            </Link>
+            <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <FaFacebookF className="text-2xl text-white hover:text-[#C0C0C0] transition-colors" />
+            </Link>
+            <Link href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+              <FaYoutube className="text-2xl text-white hover:text-[#C0C0C0] transition-colors" />
+            </Link>
+            <Link href="https://pinterest.com" target="_blank" rel="noopener noreferrer" aria-label="Pinterest">
+              <FaPinterestP className="text-2xl text-white hover:text-[#C0C0C0] transition-colors" />
+            </Link>
+          </div>
         </div>
       </nav>
     </header>

@@ -499,7 +499,7 @@ export default function WhatIDoPage() {
             <div className="w-5 h-1 bg-white my-5"></div>
             <LazyImage src="/images/red.jpg" alt="Hera" width={150} height={150} className="mx-auto rounded-full object-cover" />
             <LazyText as="p" className="text-white text-base space-y-2 text-left w-full mt-4">
-              Whether you are looking to book a project, interested in collaborating, or have any questions, feel free to reach out. I am open for freelance work, collaborations, and other opportunities. Let's create something amazing together!
+              Whether you are looking to book a project, interested in collaborating, or have any questions, feel free to reach out. I am open for freelance work, collaborations, and other opportunities. Let&apos;s create something amazing together!
             </LazyText>
             <div className="col-span-2 w-full h-px bg-white block mx-0 my-6"></div>
             <p className="text-white text-base text-left w-full">

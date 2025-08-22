@@ -37,7 +37,7 @@ export default function Home() {
           </div>
       </div>
       {/* Video and Quote Section */}
-      <section className="w-screen flex flex-col md:flex-row gap-0 items-stretch pl-8 pr-4 pb-20">
+      <section className="w-full mx-auto flex flex-col md:flex-row gap-0 items-stretch pl-4 pr-8">
         {/* Video column (7/10) */}
         <div className="w-full md:w-7/10 flex items-stretch px-2">
           <video
@@ -66,7 +66,7 @@ export default function Home() {
     <section className="w-full flex flex-col gap-0 p-0 m-0">
         {/* Row 1: GRANDYA COFFEE */}
       <div className="w-screen bg-white">
-        <div className="flex flex-col md:flex-row items-center gap-6 md:gap-0       max-w-5xl pl-8 pr-4 py-12">
+        <div className="flex flex-col md:flex-row items-center gap-6 md:gap-0       max-w-5xl mx-auto  pl-8 pr-4 py-12">
           <div className="w-full md:w-1/2 flex justify-center ">
             <a href="https://www.grandyacoffee.com" target="_blank" rel="noopener noreferrer">
               <LazyImage

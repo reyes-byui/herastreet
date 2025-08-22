@@ -34,7 +34,7 @@ export default function HeroParallax() {
           className="filter"
         />
       </div>
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-10 bg-black/40 px-10">
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-10 bg-black/40 px-10 pt-24">
         <LazyText as="h1" className="text-4xl sm:text-5xl font-extrabold mb-4 px-4 tracking-tight text-white drop-shadow-lg">
           Hi, I&apos;m Hera.
         </LazyText>

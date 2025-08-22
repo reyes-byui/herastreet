@@ -24,6 +24,7 @@ function ContentPlate({ video, title, desc, link }: ContentPlateProps) {
         controls
         controlsList="nofullscreen nodownload noremoteplayback"
         disablePictureInPicture
+        disableRemotePlayback
         className="w-full h-64 sm:h-80 object-cover mb-3 shadow bg-black"
         poster="/images/video-poster.jpg"
       >
@@ -45,7 +46,7 @@ function ContentPlate({ video, title, desc, link }: ContentPlateProps) {
 
 export default function WhatIDoPage() {
   return (
-  <main className="min-h-screen flex flex-col items-center justify-center bg-black text-white max-w-full pt-[100px] sm:pt-[200px] px-2 sm:px-8">
+  <main className="min-h-screen flex flex-col items-center justify-center bg-black text-white max-w-full pt-[100px] sm:pt-[200px] pl-2 pr-8">
       {/* Section 1: Development, Content, Design, Strategy */}
   <section className="flex flex-col sm:flex-row items-start">
     <div className="flex flex-col sm:flex-row items-center gap-8 sm:gap-18">

@@ -191,7 +191,7 @@ export default function WhatIDoPage() {
         </span>
       </section>
       {/* Development Section (scroll target) */}
-      <section id="development-section" className="w-full flex flex-col items-center justify-center py-24 pl-8 pr-4">
+      <section id="development-section" className="w-full flex flex-col items-center justify-center py-24 pl-2 pr-4">
       <LazyText as="h2" className="text-2xl sm:text-4xl font-bold text-center my-8 sm:px-32 py-4">HTML, CSS, JavaScript, Next.js, React and more
       </LazyText>
       <div className="w-25 h-1 font-bold bg-white mb-10"></div>
@@ -345,8 +345,8 @@ export default function WhatIDoPage() {
           </div>
         </section>
         {/* Design Section */}
-        <section id="design-section" className="w-full flex flex-col items-center justify-center py-24 pl-8 pr-4">
-          <LazyText as="h2" className="text-2xl sm:text-3xl font-bold mb-8 text-center px-8 sm:px-32 py-4">
+        <section id="design-section" className="w-full flex flex-col items-center justify-center py-24 px-8">
+          <LazyText as="h2" className="text-2xl sm:text-3xl font-bold mb-8 text-center py-4">
             Front-End, UI/UX, Motion Graphics, Brand Identity, Social Media Design and more
           </LazyText>
           <div className="w-25 h-1 font-bold bg-white mb-10"></div>

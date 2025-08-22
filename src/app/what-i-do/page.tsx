@@ -197,76 +197,76 @@ export default function WhatIDoPage() {
       <div className="w-25 h-1 font-bold bg-white mb-10"></div>
       <div className="sm:grid grid-cols-1 sm:grid-cols-2 gap-10 w-full max-w-5xl">
         {/* Handcrafted Haven */}
-       <div className="flex flex-col items-center bg-white m-4">
+       <div className="flex flex-col items-stretched m-4">
           <LazyImage src="/images/handcrafted.JPG" alt="Handcrafted Haven" width={600} height={340} className="mb-6 object-cover w-full h-72" />
+          <div className="w-5 h-1 bg-white my-5"></div>
           <LazyText
             as="h3"
-            className="text-xl sm:text-3xl font-semibold mb-2 bg-black text-white p-4"
-            style={{ backgroundColor: '#272727ff', color: '#fff', display: 'inline-block'}}
+            className="text-xl sm:text-3xl font-semibold text-white p-0"
           >
             Handcrafted Haven
           </LazyText>
-          <a href="https://hancraftedhaven.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-black hover:underline p-4">Know More</a>
+          <a href="https://hancraftedhaven.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-white hover:underline pb-4">Know More</a>
         </div>
           {/* GRANDYA */}
-          <div className="flex flex-col items-center bg-white m-4">
+          <div className="flex flex-col items-stretched m-4">
             <LazyImage src="/images/grandya.JPG" alt="GRANDYA" width={600} height={340} className="mb-6 object-cover w-full h-72" />
+            <div className="w-5 h-1 bg-white my-5"></div>
             <LazyText
               as="h3"
-              className="text-xl font-semibold sm:text-3xl mb-2 bg-black text-white px-4 py-2"
-              style={{ backgroundColor: '#272727ff', color: '#fff', display: 'inline-block' }}
+              className="text-xl font-semibold sm:text-3xl text-white"
             >
-              GRANDYA
+              GRANDYA COFFEE
             </LazyText>
-            <a href="https://www.grandyacoffee.com" target="_blank" rel="noopener noreferrer" className="text-black hover:underline">Know More</a>
+            <a href="https://www.grandyacoffee.com" target="_blank" rel="noopener noreferrer" className="text-white  lack hover:underline  pb-4">Know More</a>
           </div>
           {/* FOYO */}
-          <div className="flex flex-col items-center bg-white m-4">
+          <div className="flex flex-col items-stretched m-4">
             <LazyImage src="/images/foyo.JPG" alt="FOYO" width={600} height={340} className="mb-6 object-cover w-full h-72" />
+            <div className="w-5 h-1 bg-white my-5"></div>
             <LazyText
               as="h3"
-              className="text-xl font-semibold sm:text-3xl mb-2 bg-black text-white p-4"
-              style={{ backgroundColor: '#272727ff', color: '#fff', display: 'inline-block' }}
+              className="text-xl font-semibold sm:text-3xl text-white"
             >
               FOYO
             </LazyText>
-            <a href="https://www.foyo.world" target="_blank" rel="noopener noreferrer" className="text-black hover:underline p-4">Know More</a>
+            <a href="https://www.foyo.world" target="_blank" rel="noopener noreferrer" className="text-white hover:underline  pb-4">Know More</a>
           </div>
           {/* Samurai */}
-          <div className="flex flex-col items-center bg-white m-4">
+          <div className="flex flex-col items-stretched m-4">
             <LazyImage src="/images/samurai-kh.jpg" alt="Samurai" width={600} height={340} className="mb-6 object-cover w-full h-72" />
+            <div className="w-5 h-1 bg-white my-5"></div>
             <LazyText
               as="h3"
-              className="text-xl font-semibold sm:text-3xl mb-2 bg-black text-white p-4"
-              style={{ backgroundColor: '#272727ff', color: '#fff', display: 'inline-block' }}
+              className="text-xl font-semibold sm:text-3xl text-white"
             >
               Samurai
             </LazyText>
-            <a href="https://www.samurai.com" target="_blank" rel="noopener noreferrer" className="text-black hover:underline p-4">Know More</a>
+            <a href="https://www.samurai.com" target="_blank" rel="noopener noreferrer" className="text-white hover:underline  pb-4">Know More</a>
           </div>
           {/* Yume Kirako */}
-          <div className="flex flex-col items-center bg-white m-4">
+          <div className="flex flex-col items-stretched m-4">
             <LazyImage src="/images/yumekirako.jpg" alt="Yume Kirako" width={600} height={340} className="mb-6 object-cover w-full h-72" />
+            <div className="w-5 h-1 bg-white my-5"></div>
             <LazyText
               as="h3"
-              className="text-xl font-semibold sm:text-3xl mb-2 bg-black text-white p-4"
-              style={{ backgroundColor: '#272727ff', color: '#fff', display: 'inline-block' }}
+              className="text-xl font-semibold sm:text-3xl mb-2 bg-black text-white"
             >
               Yume Kirako
             </LazyText>
-            <a href="https://www.yumekirako.com" target="_blank" rel="noopener noreferrer" className="text-black hover:underline p-4">Know More</a>
+            <a href="https://www.yumekirako.com" target="_blank" rel="noopener noreferrer" className="text-white hover:underline  pb-4">Know More</a>
           </div>
           {/* La Brise - now inside the grid and styled the same as others */}
-          <div className="flex flex-col items-center bg-white m-4">
+          <div className="flex flex-col items-stretched m-4">
             <LazyImage src="/images/labrise.jpg" alt="La Brise" width={600} height={340} className="mb-6 object-cover w-full h-72" />
+            <div className="w-5 h-1 bg-white my-5"></div>
             <LazyText
               as="h3"
-              className="text-xl font-semibold sm:text-3xl mb-2 bg-black text-white p-4"
-              style={{ backgroundColor: '#272727ff', color: '#fff', display: 'inline-block' }}
+              className="text-xl font-semibold sm:text-3xl text-white"
             >
               La Brise
             </LazyText>
-            <a href="https://www.labrise.com" target="_blank" rel="noopener noreferrer" className="text-black hover:underline p-4">Know More</a>
+            <a href="https://www.labrise.com" target="_blank" rel="noopener noreferrer" className="text-white hover:underline  pb-4">Know More</a>
           </div>
       </div> 
       {/* Close grid container for Development section */}
@@ -338,7 +338,7 @@ export default function WhatIDoPage() {
             </LazyText>
             <a
               href="/contact"
-              className="mt-4 px-8 py-3 bg-white text-black font-semibold rounded-full shadow hover:bg-gray-200 transition"
+              className="mt-4 px-8 py-3 bg-white text-black font-semibold rounded-full bg-gradient-to-r from-[#888888] via-[#C0C0C0] to-[#f8f8f8] text-white font-semibold text-lg shadow transition-colors duration-300 hover:bg-gradient-to-r hover:from-[#f8f8f8] hover:via-[#C0C0C0] hover:to-[#888888] hover:text-[#7A7A7A]"
             >
               Contact Me
             </a>
